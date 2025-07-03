@@ -1,9 +1,7 @@
-// api/submit-suggestion.js
 export default async function handler(req, res) {
   if (req.method === 'POST') {
     const { gearName, gearCategory, gearReason, gearImage } = req.body;
 
-    // Récupère l'URL du webhook depuis les variables d'environnement de Vercel
     const webhookUrl = process.env.DISCORD_WEBHOOK_URL; 
 
     if (!webhookUrl) {
@@ -14,7 +12,7 @@ export default async function handler(req, res) {
       embeds: [{
         title: `Nouvelle Suggestion: ${gearName}`,
         description: gearReason,
-        color: 5800000, // Une couleur Discord (violet)
+        color: 5800000,
         fields: [
           {
             name: "Catégorie",
