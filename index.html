@@ -5,7 +5,8 @@
     <title>Center French - Gears Roblox</title>
     <link rel="icon" href="https://i.imgur.com/tuAjHeg.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
       :root {
         --main-color: #5927AA;
         --main-color-light: #8A4CEB;
@@ -63,7 +64,7 @@
         max-width: 1200px;
         margin: auto;
         position: relative;
-        z-index: 1; 
+        z-index: 1;
         display: block;
       }
 
@@ -103,7 +104,7 @@
 
       .nav-center {
         display: flex;
-        gap: 50px;
+        gap: 20px;
         flex-grow: 1;
         justify-content: center;
       }
@@ -277,6 +278,54 @@
         letter-spacing: 1.5px;
       }
 
+      .regulations-content {
+        background: var(--card-bg);
+        border-radius: 20px;
+        padding: 40px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4), 0 0 20px rgba(89, 39, 170, 0.2);
+        backdrop-filter: blur(12px);
+        border: 2px solid var(--border-color);
+      }
+
+      .regulations-content h3 {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 28px;
+        color: var(--main-color-light);
+        margin-top: 30px;
+        margin-bottom: 20px;
+        text-shadow: 0 0 10px rgba(160, 89, 255, 0.4);
+        border-bottom: 2px solid rgba(138, 76, 235, 0.5);
+        padding-bottom: 10px;
+      }
+
+      .regulations-content p,
+      .regulations-content ul {
+        font-size: 17px;
+        color: var(--text-medium);
+        margin-bottom: 15px;
+      }
+
+      .regulations-content ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .regulations-content ul li {
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 10px;
+      }
+
+      .regulations-content ul li::before {
+        content: '•';
+        color: var(--main-color-light);
+        font-size: 24px;
+        position: absolute;
+        left: 0;
+        top: -2px;
+        font-weight: bold;
+      }
+
       .gear-list {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -381,7 +430,7 @@
         overflow: hidden;
       }
 
-      .copy-btn::before { 
+      .copy-btn::before {
         content: '';
         position: absolute;
         top: 0;
@@ -463,6 +512,13 @@
         .search-container input {
             width: 200px;
         }
+        .regulations-content h3 {
+            font-size: 24px;
+        }
+        .regulations-content p,
+        .regulations-content ul {
+            font-size: 16px;
+        }
       }
 
       @media (max-width: 768px) {
@@ -535,6 +591,21 @@
             border-left-width: 6px;
         }
 
+        .regulations-content {
+            padding: 25px;
+        }
+
+        .regulations-content h3 {
+            font-size: 22px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .regulations-content p,
+        .regulations-content ul {
+            font-size: 15px;
+        }
+
         .gear-list {
             grid-template-columns: 1fr;
             gap: 20px;
@@ -576,6 +647,13 @@
         section h2 {
             font-size: 24px;
         }
+        .regulations-content h3 {
+            font-size: 20px;
+        }
+        .regulations-content p,
+        .regulations-content ul {
+            font-size: 14px;
+        }
         .gear-card {
             padding: 18px;
         }
@@ -609,6 +687,7 @@
       </div>
 
       <div class="nav-center">
+          <a href="#reglement" class="">Règlement</a>
           <a href="#joueurs" class="active">Joueurs</a>
           <a href="#staff" class="">Staff</a>
           <a href="#interdits" class="">Interdits</a>
@@ -627,6 +706,35 @@
       </div>
     </nav>
 
+    <section id="reglement">
+      <h2>📜 Règlement</h2>
+      <div class="regulations-content">
+        <h3>1 Assistance et signalement</h3>
+        <ul>
+          <li>Si vous rencontrez un problème en jeux, faites la commande “!help" dans le chat.</li>
+          <li>Vous devez faire un "!help" en cas de nécessité immédiate ou d'une question pertinente, si le modérateur juge que le ticket est inutile, vous vous engagez à des sanctions.</li>
+          <li>Si aucun modérateur n'est disponible, vous pouvez également contacter notre équipe via le serveur communautaire.</li>
+        </ul>
+
+        <h3>2 Règles générale</h3>
+        <ul>
+          <li>Le respect est obligatoire envers les autres joueurs et l'équipe de Center French. Tout comportement insultant, diffamatoire ou provocateur sera sanctionné.</li>
+          <li>Les propos racistes, homophobes, sexistes, ou discriminatoires sont strictement interdits et seront sévèrement et immédiatement sanctionnés.</li>
+          <li>Contourner une sanction de quelque manière que ce soit sera conduite à l'annulation de toute demande d'appel de sanction et pourra également allonger votre sanction.</li>
+          <li>Tout sujet illégal et ne respectant pas les lois françaises sera puni d'une sanction très sévère et immédiate.</li>
+          <li>Un skin approprié vous est demandé, le modérateur par sa propre appréciation peut demander au joueur de changer ou d'enlever le skin.</li>
+        </ul>
+
+        <h3>3 Comportement en jeux</h3>
+        <ul>
+          <li>Respectez les opinions des autres joueurs et joueuses, que ce soit dans le chat textuel ou vocal.</li>
+          <li>L'utilisation d'exploit ou de bugs considéré par le modérateur, comme dérangeant sera sanctionné immédiatement.</li>
+          <li>Les soundboard sont tolérés, mais si un membre de la modération considère que cela dérange les joueurs, vous devez l'arrêter sous peine de sanctions, de plus, la modération se donne le droit de stopper quiconque utilise des soundboard, cela vient à la responsabilité du joueur.</li>
+          <li>La demande excessive de gears est punissable.</li>
+          <li>Les sujets ou les débats à caractère politique sont tolérés, mais la modération peut se donner le droit de stopper le débat.</li>
+        </ul>
+      </div>
+    </section>
 
     <section id="joueurs">
       <h2>✅ Gears autorisés pour les joueurs</h2>
@@ -951,24 +1059,6 @@
           <button class="copy-btn" onclick="copyId(this, '72069827')">Copier l'ID</button>
           <div class="copied-msg">✅ ID copié !</div>
         </div>
-        <div class="gear-card">
-          <img src="https://static.robloxden.com/strapi/thumbnail_sword_of_darkness_9125a4f57a" alt="Sword of Darkness">
-          <div class="gear-name">Sword of Darkness</div>
-          <div class="gear-quantity">NE PAS EN ABUSER</div>
-          <div class="gear-extra">Épée de l'ombre</div>
-          <div class="gear-id">ID: 77443491</div>
-          <button class="copy-btn" onclick="copyId(this, '77443491')">Copier l'ID</button>
-          <div class="copied-msg">✅ ID copié !</div>
-        </div>
-        <div class="gear-card">
-          <img src="https://static.robloxden.com/strapi/thumbnail_sword_of_light_fcb3319714" alt="Sword of Light">
-          <div class="gear-name">Sword of Light</div>
-          <div class="gear-quantity">NE PAS EN ABUSER</div>
-          <div class="gear-extra">Épée de la Lumiere</div>
-          <div class="gear-id">ID: 77443461</div>
-          <button class="copy-btn" onclick="copyId(this, '77443461')">Copier l'ID</button>
-          <div class="copied-msg">✅ ID copié !</div>
-        </div>
                       <div class="gear-card">
           <img src="https://static.robloxden.com/strapi/thumbnail_lightning_mcqueen_companion_b0946061c4" alt="Lightning McQueen Companion">
           <div class="gear-name">Lightning McQueen Companion</div>
@@ -1061,7 +1151,7 @@
           <img src="https://static.robloxden.com/strapi/thumbnail_rainbow_periastron_omega_37d4649859" alt="Rainbow Periastron Omega">
           <div class="gear-name">Rainbow Periastron Omega</div>
           <div class="gear-extra">tue toute la map et fais  beaucoup de bruit</div>
-          <button class="copy-btn" onclick="copyId(this, 'Ne Pas Utiliser')">Ne Pas Utiliser</button>
+          <button class="copy-btn" onclick="copyId(this, 'Ne pas utiliser')">Ne Pas Utiliser</button>
           <div class="copied-msg" style="color: var(--error);">⛔ Interdit !</div>
         </div>
         <div class="gear-card">
@@ -1254,6 +1344,20 @@
           <button class="copy-btn" onclick="copyId(this, 'Ne pas utiliser')">Ne Pas Utiliser</button>
           <div class="copied-msg" style="color: var(--error);">⛔ Interdit !</div>
         </div>
+        <div class="gear-card">
+          <img src="https://static.robloxden.com/strapi/thumbnail_bundle_of_tnt_fb69fc303b" alt="Sword of Darkness">
+          <div class="gear-name">Sword of Darkness</div>
+          <div class="gear-extra">Trop d'abus, y'en a qui aime le jour</div>
+          <button class="copy-btn" onclick="copyId(this, 'Ne pas utiliser')">Ne Pas Utiliser</button>
+          <div class="copied-msg" style="color: var(--error);">⛔ Interdit !</div>
+        </div>
+        <div class="gear-card">
+          <img src="https://static.robloxden.com/strapi/thumbnail_bundle_of_tnt_fb69fc303b" alt="Sword of Light">
+          <div class="gear-name">Sword of Light</div>
+          <div class="gear-extra">Trop d'abus, y'en a qui aime la nuit</div>
+          <button class="copy-btn" onclick="copyId(this, 'Ne pas utiliser')">Ne Pas Utiliser</button>
+          <div class="copied-msg" style="color: var(--error);">⛔ Interdit !</div>
+        </div>
       </div>
     </section>
 
@@ -1299,15 +1403,42 @@
           return;
         }
 
-        navigator.clipboard.writeText(id).then(() => {
+        const tempInput = document.createElement('textarea');
+        tempInput.value = id;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        try {
+          document.execCommand('copy');
           msg.style.display = "block";
           setTimeout(() => {
             msg.style.display = "none";
           }, 2500);
-        }).catch(err => {
+        } catch (err) {
             console.error('Failed to copy ID: ', err);
-            alert("Erreur lors de la copie de l'ID.");
-        });
+            const customAlert = document.createElement('div');
+            customAlert.style.cssText = `
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: #333;
+                color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 20px rgba(0,0,0,0.5);
+                z-index: 9999;
+                font-family: 'Rajdhani', sans-serif;
+                font-size: 18px;
+                text-align: center;
+            `;
+            customAlert.textContent = "Erreur lors de la copie de l'ID. Veuillez copier manuellement : " + id;
+            document.body.appendChild(customAlert);
+            setTimeout(() => {
+                document.body.removeChild(customAlert);
+            }, 3000);
+        } finally {
+            document.body.removeChild(tempInput);
+        }
       }
 
       const navLinks = document.querySelectorAll('.nav-center a');
@@ -1319,7 +1450,7 @@
           let scrollPos = window.scrollY + window.innerHeight / 2;
 
           sections.forEach((section, index) => {
-              if (section.offsetTop <= scrollPos && (section.offsetTop + section.offsetHeight) > scrollPos) {
+              if (section && section.offsetTop <= scrollPos && (section.offsetTop + section.offsetHeight) > scrollPos) {
                   navLinks.forEach(link => link.classList.remove('active'));
                   navLinks[index].classList.add('active');
               }
@@ -1338,30 +1469,41 @@
 
         allSections.forEach(section => {
           let sectionHasMatch = false;
-          const gearCardsInSection = section.querySelectorAll('.gear-card');
+          if (section.id !== 'reglement') {
+            const gearCardsInSection = section.querySelectorAll('.gear-card');
 
-          gearCardsInSection.forEach(card => {
-            const gearName = card.querySelector('.gear-name')?.textContent.toLowerCase() || '';
-            const gearExtra = card.querySelector('.gear-extra')?.textContent.toLowerCase() || '';
-            const gearId = card.querySelector('.gear-id')?.textContent.toLowerCase() || '';
+            gearCardsInSection.forEach(card => {
+              const gearName = card.querySelector('.gear-name')?.textContent.toLowerCase() || '';
+              const gearExtra = card.querySelector('.gear-extra')?.textContent.toLowerCase() || '';
+              const gearId = card.querySelector('.gear-id')?.textContent.toLowerCase() || '';
 
-            if (gearName.includes(searchTerm) || gearExtra.includes(searchTerm) || gearId.includes(searchTerm)) {
-              card.style.display = 'flex';
-              sectionHasMatch = true;
-              totalMatches++;
-            } else {
-              card.style.display = 'none';
-            }
-          });
+              if (gearName.includes(searchTerm) || gearExtra.includes(searchTerm) || gearId.includes(searchTerm)) {
+                card.style.display = 'flex';
+                sectionHasMatch = true;
+                totalMatches++;
+              } else {
+                card.style.display = 'none';
+              }
+            });
+          } else {
+            section.style.display = 'none';
+          }
+
 
           if (searchTerm === '') {
             section.style.display = 'block';
-            gearCardsInSection.forEach(card => card.style.display = 'flex');
+            if (section.id !== 'reglement') {
+                section.querySelectorAll('.gear-card').forEach(card => card.style.display = 'flex');
+            }
           } else {
-            if (sectionHasMatch) {
-              section.style.display = 'block';
+            if (section.id !== 'reglement') {
+                if (sectionHasMatch) {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
             } else {
-              section.style.display = 'none';
+                section.style.display = 'none';
             }
           }
         });
